@@ -1,4 +1,5 @@
 #include "turn.h"
+#include <ctime>
 #include <iostream>
 using namespace std;  
 

@@ -1,4 +1,5 @@
 #include "game.h"
+#include "turn.h"
 #include <iostream>
 using namespace std;
 
@@ -16,14 +17,16 @@ void Game::selectNames()
 
 void Game::start()
 {
+    cout << "Bienvenue dans ce Pierre-Feuille-Ciseaux, " << j1.getNom() << "!" << endl;
     int tour = 1;
-    int score1= 0;
-    int score2= 0;
     while (true)
     {
-        cout << "Bienvenue dans ce Pierre-Feuille-Ciseaux, " << j1.getNom() << "!" << endl;
         // Logique du jeu à implémenter ici
-        cout << "Tour n° " << tour << " : " << endl;
+        cout << "Tour # " << tour << " : " << endl;
+        turn.jouerTour();
+        turn.afficherScore();
+        int score1 = turn.getScore1();
+        int score2 = turn.getScore2();
         if (score1 >= 3) {
             cout << j1.getNom() << " a gagne la partie!" << endl;
             break;

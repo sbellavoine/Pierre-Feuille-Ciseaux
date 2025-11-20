@@ -14,6 +14,8 @@ class Turn {
         Turn();
         void jouerTour();
         void afficherScore();
+        int getScore1() const { return score1; }
+        int getScore2() const { return score2; }
         
 };
 
