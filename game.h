@@ -11,6 +11,6 @@ class Game{
         Game();
         void start();
         void selectNames();
-}
+};
 
 #endif

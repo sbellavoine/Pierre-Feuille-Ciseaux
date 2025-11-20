@@ -8,7 +8,9 @@ class Joueur {
         string nom;
     public:
         Joueur();
-        Joueur(string, n);
+        Joueur(string n);
         string getNom() const;
         void setNom(const string& value);
 };
+
+#endif

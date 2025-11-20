@@ -4,7 +4,6 @@ using namespace std;
 
 Game::Game() : j1()
 {
-    currentPlayer = &j1;
 }
 
 void Game::selectNames()
@@ -25,11 +24,11 @@ void Game::start()
         cout << "Bienvenue dans ce Pierre-Feuille-Ciseaux, " << j1.getNom() << "!" << endl;
         // Logique du jeu à implémenter ici
         cout << "Tour n° " << tour << " : " << endl;
-        if score1 >= 3 {
+        if (score1 >= 3) {
             cout << j1.getNom() << " a gagne la partie!" << endl;
             break;
         }
-        if score2 >= 3 {
+        if (score2 >= 3) {
             cout << "L'IA a gagne la partie!" << endl;
             break;
         }
