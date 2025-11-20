@@ -1,6 +1,6 @@
 #ifndef GAME_H
 #define GAME_H
-#include "Joueur.h"
+#include "joueur.h"
 
 class Game{
     private:
